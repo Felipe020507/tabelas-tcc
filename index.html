@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dark_tabela.js"></script>
+</head>
+
+<body>
+
+    <header id="cabecalhoLogo">
+
+        <div id="MenuLateral">
+            <img id="iconePessoaEscuro" src="img/icone.png" alt="" width="120">
+            <img id="iconePessoaBranco" src="img/icone_branco.png" alt="" width="120">
+            <h2>"DOCENTE"</h2>
+        </div>
+
+        <div id="DivImagem">
+            <img id="LogoSenaiHeader" src="img/senai-logo-4-599x154.png" alt="" />
+        </div>
+
+    </header>
+
+    <div class="titulo">
+        <button id="darkModeToggle" onclick="toggleDarkMode()"><img id="sol" src="img/crescent-moon-png-21.png"
+                alt=""></button>
+        <button id="claraModeToggle" onclick="toggleDarkMode()"><img id="sol" src="img/iconeSol.png" alt=""></button>
+        <span>
+            <h1 id="testeTitle">TESTE1</h1>
+            <select id="testeSelect" onchange="mudarTitulo()">
+                <option value="teste1">Teste 1</option>
+                <option value="teste2">Teste 2</option>
+                <option value="teste3">Teste 3</option>
+            </select>
+        </span>
+    </div>
+
+
+    <div class="tabela-container" id="tabelaTeste1Container">
+        <table id="tabelaTeste1" class="tabela">
+            <!-- Conteúdo da tabela para teste1 -->
+            <tr>
+                <th>Alunos</th>
+                <th>Formativa</th>
+                <!-- Adicione as demais colunas -->
+            </tr>
+            <tr>
+                <td>Aluno 1</td>
+                <td><input type="checkbox" id="checkbox1" name="checkbox1" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox2" name="checkbox1" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 2</td>
+                <td><input type="checkbox" id="checkbox3" name="checkbox2" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox4" name="checkbox2" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 5</td>
+                <td>
+                <input type="checkbox" id="checkbox5" name="checkbox3" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox6" name="checkbox3" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 4</td>
+                <td><input type="checkbox" id="checkbox7" name="checkbox4" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox8" name="checkbox4" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 5</td>
+                <td><input type="checkbox" id="checkbox9" name="checkbox5" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox10" name="checkbox5" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 6</td>
+                <td><input type="checkbox" id="checkbox11" name="checkbox6" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox12" name="checkbox6" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 7</td>
+                <td><input type="checkbox" id="checkbox12" name="checkbox7" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox13" name="checkbox7" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 8</td>
+                <td><input type="checkbox" id="checkbox14" name="checkbox8" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox15" name="checkbox8" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 9</td>
+                <td><input type="checkbox" id="checkbox16" name="checkbox9" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox17" name="checkbox9" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 10</td>
+                <td><input type="checkbox" id="checkbox18" name="checkbox10" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox19" name="checkbox10" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 11</td>
+                <td><input type="checkbox" id="checkbox20" name="checkbox11" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox21" name="checkbox11" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 12</td>
+                <td><input type="checkbox" id="checkbox22" name="checkbox12" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox23" name="checkbox12" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 13</td>
+                <td><input type="checkbox" id="checkbox24" name="checkbox13" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox25" name="checkbox13" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 14</td>
+                <td><input type="checkbox" id="checkbox26" name="checkbox14" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox27" name="checkbox14" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 15</td>
+                <td><input type="checkbox" id="checkbox28" name="checkbox15" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox29" name="checkbox15" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 16</td>
+                <td><input type="checkbox" id="checkbox30" name="checkbox16" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox31" name="checkbox16" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 17</td>
+                <td><input type="checkbox" id="checkbox32" name="checkbox17" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox33" name="checkbox17" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 18</td>
+                <td><input type="checkbox" id="checkbox34" name="checkbox18" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox35" name="checkbox18" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Aluno 19</td>
+                <td><input type="checkbox" id="checkbox36" name="checkbox19" onclick="desmarqueOutro(this)"> Opção 1
+                    <input type="checkbox" id="checkbox37" name="checkbox19" onclick="desmarqueOutro(this)"> Opção 2
+                </td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="tabela-container" id="tabelaTeste2Container">
+        <table id="tabelaTeste2" class="tabela">
+            <!-- Conteúdo da tabela para teste2 -->
+            <tr>
+                <th>Coluna 2</th>
+                <th>Coluna 2</th>
+                <!-- Adicione as demais colunas -->
+            </tr>
+            <tr>
+                <td>Dado 2</td>
+                <td>Dado 2</td>
+                <!-- Adicione os demais dados -->
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="tabela-container" id="tabelaTeste3Container">
+        <table id="tabelaTeste3" class="tabela">
+            <!-- Conteúdo da tabela para teste3 -->
+            <tr>
+                <th>Coluna 3</th>
+                <th>Coluna 3</th>
+                <!-- Adicione as demais colunas -->
+            </tr>
+            <tr>
+                <td>Dado 3</td>
+                <td>Dado 3</td>
+                <!-- Adicione os demais dados -->
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
